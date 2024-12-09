@@ -1,0 +1,7 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: 331436;
+    flex-flow: wrap;
+    padding: 15px 16px;
+}
