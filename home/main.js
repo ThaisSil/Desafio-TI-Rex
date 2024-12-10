@@ -1,4 +1,4 @@
-const loginButton = document.getElementById("botao-login");
+const loginButton = document.getElementById("button-header");
 loginButton.addEventListener('click', () => {
     window.location.href = 'login.html';
 });
