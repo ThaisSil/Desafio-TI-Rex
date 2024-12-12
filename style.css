@@ -39,7 +39,7 @@ header {
   text-align: left;
   color: white;
 }
-.button {
+#button-header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -257,7 +257,7 @@ header {
 .subscribe {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-center;
   gap: 24px;
 }
 #section-4 > .subscribe > h1 {
@@ -289,7 +289,8 @@ header {
   height: 60px; */
 }
 input[type="email"],
-[type="name"] {
+[type="name"],
+[type="password"] {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -303,57 +304,80 @@ input[type="email"],
   font-weight: 500;
 }
 
-/* /* pagina login */
-
-#container-login {
+/*footer*/
+footer {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 170px;
-  max-width: 1440px;
-  min-height: 900px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 60px;
+  gap: 60px;
+  background: #331436;
 }
-/* /*text login */
 
-#login {
+.social-media {
+  width: 136px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.social-media > .circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+.social-media > .icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  transform: translate(-50%, -50%);
+}
+
+/* pagina login */
+
+.container-login{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 60px;
+  width: 100%;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.text > h1 {
   width: 520px;
-  height: 24px;
-  font-family: "Roboto", sans-serif;
   font-style: bold;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 24px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
   gap: 24px;
   color: #331436;
 }
-p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+.text > p {
+  width: 520px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #331436;
 }
 
-/* /* form  */
+/* form  */
 
-#form {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
   gap: 4px;
-  width: 520px;
-  height: 60px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /*button login*/
@@ -367,58 +391,8 @@ p {
   width: 240px;
   height: 48px;
   gap: 12px;
-  padding: 0px;
   background-color: #331436;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-/*Input*/
-
-input[type="email"] {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 80px;
-  width: 520px;
-  height: 60px;
-  color: #331436;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-}
-input[type="password"] {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 80px;
-  width: 520px;
-  height: 60px;
-  color: #331436;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 60px;
-  gap: 60px;
-  width: 1440px;
-  height: 220px;
-  background: #331436;
 }
