@@ -22,7 +22,7 @@
             and discover a smarter way to manage your work with efficiency and
             teamwork
           </p>
-          <button class="button">Get Started</button>
+          <button id="button">Get Started</button>
         </div>
 
         <img src="imagens/imagem1.png" alt="imagem1" />
@@ -106,14 +106,15 @@
           <h1>Subscribe to Updates</h1>
           <p>Stay informed with our latest updates</p>
         </div>
-        <div class="form">
-          <form action="">
+        <div id="subscribeForm">
+          <form id="form" method="post" onsubmit="return validateForm(event)">
             <label for="email">Email</label><br />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email"
+              required
             />
             <p>We promise not to spam</p>
             <br />
@@ -123,24 +124,31 @@
               name="name"
               id="name"
               placeholder="Enter your name"
+              required
             /><br />
-            <button class="btn-submit">Subscribe</button>
+            <button class = "btn-submit">Subscribe</button>
           </form>
         </div>
       </section>
 
       <footer>
-       <div class="social-media">
-        <div class="circle">
-          <img class="icon" src="imagens/facebook 1.png" alt="facebook" />
+        <div class="social-media">
+          <div class="circle">
+            <a href="https://www.facebook.com/"
+              ><img class="icon" src="imagens/facebook 1.png" alt="facebook"
+            /></a>
+          </div>
+          <div class="circle">
+            <a href="https://www.instagram.com/"
+              ><img class="icon" src="imagens/instagram 1.png" alt="instagram"
+            /></a>
+          </div>
+          <div class="circle">
+            <a href="https://www.linkedin.com/"
+              ><img class="icon" src="imagens/linkedin 1.png" alt="linkedin"
+            /></a>
+          </div>
         </div>
-        <div class="circle">
-          <img class="icon" src="imagens/instagram 1.png" alt="instagram" />
-        </div>
-        <div class="circle">
-          <img class="icon" src="imagens/linkedin 1.png" alt="linkedin" />
-        </div>
-       </div>
       </footer>
     </div>
 

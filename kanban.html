@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kanban</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="imagens/logo.png" alt="logo" />
+        <h3 id="header">Project Manager</h3>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="">Profile</a></li>
+          </ul>
+        </nav>
+        <div class="search"><form>
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Search in site"
+          />
+        </form>
+         <div><img src="imagens/ic-search.png" alt="lupa"></div>
+         </div>
+      </header>
+      <section class="kanban">
+        <div class="column">
+          <h1>To Do</h1>
+          <div class="cards">
+            <div class="header">
+              <div class="priorityHigh">High</div>
+              <div class="date">Oct 16, 24</div>
+            </div>
+            <div class="task">
+              <p>Create app</p>
+            </div>
+            <div class="footer-1">
+              <img src="imagens/X.png" alt="X" />
+              <div class="IT">
+                <p class="tag">IT</p>
+              </div>
+              <div class="JS">
+                <p class="tag">JS</p>
+              </div>
+              <div class="NS">
+                <p class="tag">NS</p>
+              </div>
+              <div class="LC">
+                <p class="tag">LC</p>
+              </div>
+              <div class="GM">
+                <p class="tag">GM</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="header">
+              <div class="priorityMid">Mid</div>
+              <div class="date">Oct 09, 24</div>
+            </div>
+            <div class="task">
+              <p>Train for the project</p>
+            </div>
+            <div class="footer-1">
+              <img src="imagens/X.png" alt="X" />
+              <div class="NS">
+                <p class="tag">NS</p>
+              </div>
+              <div class="GM">
+                <p class="tag">GM</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="header">
+              <div class="priorityLow">Low</div>
+              <div class="date">Oct 16, 24</div>
+            </div>
+            <div class="task">
+              <p>Make popocorn</p>
+            </div>
+            <div class="footer-1">
+              <img src="imagens/X.png" alt="X" />
+              <div class="GM">
+                <p class="tag">GM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h1>In Progress</h1>
+          <div class="cards">
+            <div class="header">
+              <div class="priorityHigh">High</div>
+              <div class="date">Oct 08, 24</div>
+            </div>
+            <div class="task">
+              <p>Debug error</p>
+            </div>
+            <div class="footer-1">
+              <img src="imagens/X.png" alt="X" />
+              <div class="IT">
+                <p class="tag">IT</p>
+              </div>
+              <div class="JS">
+                <p class="tag">JS</p>
+              </div>
+              <div class="NS">
+                <p class="tag">NS</p>
+              </div>
+              <div class="LC">
+                <p class="tag">LC</p>
+              </div>
+              <div class="GM">
+                <p class="tag">GM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h1>Complete</h1>
+          <div class="cards">
+            <div class="header">
+              <div class="priorityLow">Low</div>
+              <div class="date">Apr 02, 21</div>
+            </div>
+            <div class="task">
+              <p>Eat a sandwich</p>
+            </div>
+            <div class="footer-1">
+              <img src="imagens/X.png" alt="X" />
+              <div class="GM">
+                <p class="tag">GM</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="header">
+              <div class="priorityMid">Mid</div>
+              <div class="date">Jan 28, 86</div>
+            </div>
+            <div class="task">
+              <p>Drink water</p>
+            </div>
+            <div class="footer-1">
+              <img src="imagens/X.png" alt="X" />
+              <div class="GM">
+                <p class="tag">GM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="social-media">
+          <div class="circle">
+            <a href="https://www.facebook.com/"
+              ><img class="icon" src="imagens/facebook 1.png" alt="facebook"
+            /></a>
+          </div>
+          <div class="circle">
+            <a href="https://www.instagram.com/"
+              ><img class="icon" src="imagens/instagram 1.png" alt="instagram"
+            /></a>
+          </div>
+          <div class="circle">
+            <a href="https://www.linkedin.com/"
+              ><img class="icon" src="imagens/linkedin 1.png" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

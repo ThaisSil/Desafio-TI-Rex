@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="body-Kanban">
     <div class="container">
       <header>
         <img class="logo" src="imagens/logo.png" alt="logo" />
@@ -19,7 +19,7 @@
         </div>
 
         <div class="form">
-          <form action="">
+          <form action="" id="login-form" onsubmit="return validateLogin(event)">
             <label for="email">Email</label><br />
             <input
               type="email"
@@ -42,13 +42,19 @@
       <footer>
         <div class="social-media">
           <div class="circle">
-            <img class="icon" src="imagens/facebook 1.png" alt="facebook" />
+            <a href="https://www.facebook.com/"
+              ><img class="icon" src="imagens/facebook 1.png" alt="facebook"
+            /></a>
           </div>
           <div class="circle">
-            <img class="icon" src="imagens/instagram 1.png" alt="instagram" />
+            <a href="https://www.instagram.com/"
+              ><img class="icon" src="imagens/instagram 1.png" alt="instagram"
+            /></a>
           </div>
           <div class="circle">
-            <img class="icon" src="imagens/linkedin 1.png" alt="linkedin" />
+            <a href="https://www.linkedin.com/"
+              ><img class="icon" src="imagens/linkedin 1.png" alt="linkedin"
+            /></a>
           </div>
         </div>
       </footer>
