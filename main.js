@@ -1,21 +1,27 @@
-const loginButton = document.getElementById("button-header");
-loginButton.addEventListener("click", () => {
+const buttonHeader = document.getElementById("button-header");
+if(buttonHeader){
+buttonHeader.addEventListener("click", () => {
   window.location.href = "login.html";
 });
+}
 const getStarted = document.getElementById("button");
+if(getStarted){
 getStarted.addEventListener("click", () => {
   window.location.href = "login.html";
 });
+}
 
-// home page validation subscribe button
-function validateForm(event) {
-  event.preventDefault();
+/* home page validation subscribe button*/
+
+let form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
   const email = document.getElementById("email").value;
   const name = document.getElementById("name").value;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!email || !emailRegex.test(email)) {
+  if (emailRegex.test(email) == false) {
     alert("Please enter a valid email");
     return false;
   }
@@ -23,50 +29,36 @@ function validateForm(event) {
     alert("Please enter name.");
     return false;
   }
-}
 
-const userData = {
-  email: email,
-  name: name,
-};
+  const userData = { name, email };
 
-localStorage.setItem("userData", JSON.stringify(userData));
+  localStorage.setItem("userData", JSON.stringify(userData));
 
-document.getElementById("form").reset();
+  alert("Form submitted successfully!");
 
-alert("registration completed successfully!");
+});
 
-// return true;
+// /* login page validation */
 
-/* login page validation */
+// let loginForm = document.querySelector("login-form");
+// loginForm.addEventListener("submit", function (e) {
+//   e.preventDefault();
 
-function validateLogin(event) {
-  event.preventDefault();
+//   const email = document.getElementById("email").value;
+//   const password = document.getElementById("password").value;
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   if (emailRegex.test(email) == false) {
+//     alert("Please enter a valid email");
+//     return false;
+//   }
+//   if (!password) {
+//     alert("Please enter password.");
+//     return false;
+//   }
 
-  if (!email || !emailRegex.test(email)) {
-    alert("Please enter a valid email");
-    return false;
-  }
-  if (!password) {
-    alert("Please enter password.");
-    return false;
-  }
+//    window.location.href = "kanban.html";
+//    return true;
+// });
 
-  window.location.href = "kanban.html";
 
-  return true;
-}
-
-const loginForm = document.getElementById("login-form");
-if (loginForm) {
-  loginForm.addEventListener("submit", validateLogin);
-}
-
-const subscribeForm = document.getElementById("form");
-if (subscribeForm) {
-  subscribeForm.addEventListener("submit", validateForm);
-}
