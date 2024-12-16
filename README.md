@@ -7,9 +7,11 @@ Esse projeto tem como objetivo desenvolver um site utilizando HTML, CSS e JavaSc
 **index.html:** 
 Página principal do site
 Na Home está localizado o botão de Login, na header, e o botão Get Started, que direciona para a página de login. Logo abaixo, ainda na Home, encontra-se um formulário, onde deve ser preenchido e-mail e nome, as informações são armazenadas no LocalStorage.
+
 **login.html**
 Página de login
 Na página login existe um formulário para autenticação de usuários com validação de e-mail e senha. Assim que os campos são preenchidos corretamente a página é direcionada para a página kanban.
+
 **kanban.html**
 Página kanban
 Econtra-se uma quadro kanban com as colunas "To Do", "In Progress" e "Complete". Na header existe algumas opções de menu, entre eles um que direciona para a home.
