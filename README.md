@@ -4,31 +4,78 @@ Esse projeto tem como objetivo desenvolver um site utilizando HTML, CSS e JavaSc
 
 ### Estrutura do Projeto:
 
-**index.html:** 
-Página principal do site
-Na Home está localizado o botão de Login, na header, e o botão Get Started, que direciona para a página de login. Logo abaixo, ainda na Home, encontra-se um formulário, onde deve ser preenchido e-mail e nome, as informações são armazenadas no LocalStorage.
+├── index.html           // Página inicial (Home)
 
-**login.html**
-Página de login
-Na página login existe um formulário para autenticação de usuários com validação de e-mail e senha. Assim que os campos são preenchidos corretamente a página é direcionada para a página kanban.
+├── login.html           // Página de Login
 
-**kanban.html**
-Página kanban
-Econtra-se uma quadro kanban com as colunas "To Do", "In Progress" e "Complete". Na header existe algumas opções de menu, entre eles um que direciona para a home.
+├── kanban.html          // Página do Quadro Kanban
 
-**css:** arquivo com os estilos para as páginas
+├── css/                 // Estilos CSS
 
-**image:** Pasta para armazenar imagens do projeto
+├── js/                  // Scripts JavaScript
 
-**js:** arquivo com os scripts para as páginas
-  - Cadastro:
-    Validação do formulário: para a validação do e-mail utiliza-se uma expressão regular(RegEx);
-    Caso o e-mail inserido não seja válido ou o campo nome não esteja preenchido um alert é emitido;
-    Todas as validações sendo 'true' as informações inseridas são armazenadas no LocalStorage.
-  - Login:
-    Validação do formulário: para a validação do e-mail utiliza-se uma expressão regular(RegEx);
-    O campo senha deve estar preenchido;
-    Caso o e-mail inserido não seja válido ou o campo senha não esteja devidamente preenchido um alert é emitido.
-    Todas as validações sendo 'true' é direcionado para a página kanban.
+└── imagem/              // Imagens do projeto
 
+🔹 Funcionalidades
+
+🏠 Página Inicial (index.html)
+
+Botão Login no cabeçalho.
+
+Botão Get Started, que também redireciona para a página de login.
+
+Formulário para preenchimento de nome e e-mail.
+
+Validações:
+
+Verificação do formato de e-mail com RegEx.
+
+Campos obrigatórios (nome e e-mail).
+
+Armazenamento dos dados válidos no LocalStorage.
+
+🔐 Página de Login (login.html)
+
+Formulário de autenticação com campos de e-mail e senha.
+
+Validações:
+
+E-mail validado com RegEx.
+
+Campo de senha obrigatório.
+
+Em caso de erro, alertas são exibidos.
+
+Em caso de sucesso, o usuário é redirecionado para a página kanban.html.
+
+📋 Quadro Kanban (kanban.html)
+Estrutura de Kanban com três colunas:
+
+To Do
+
+In Progress
+
+Complete
+
+Menu no cabeçalho com opções, incluindo o redirecionamento para a Home.
+
+💡Tecnologias Utilizadas:
+
+HTML5
+
+CSS3
+
+JavaScript (ES6)
+
+LocalStorage
+
+✅ Validações e Armazenamento
+
+Expressões Regulares (RegEx) para validação de e-mail.
+
+Verificação de campos obrigatórios.
+
+Armazenamento dos dados de cadastro no LocalStorage do navegador.
+
+Navegação entre páginas conforme o fluxo do usuário (Home → Login → Kanban).
   
